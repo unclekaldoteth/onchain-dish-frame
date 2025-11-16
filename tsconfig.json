@@ -13,15 +13,17 @@
     "isolatedModules": true,
     "jsx": "react-jsx",
     "incremental": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
-    "paths": {
+
+    "baseUrl": ".",               // ⬅️ WAJIB ADA
+    "paths": {                    // ⬅️ Cuma 1x, jangan dobel
       "@/*": ["./*"]
-    }
+    },
+
+    "plugins": [
+      { "name": "next" }
+    ]
   },
+
   "include": [
     "next-env.d.ts",
     "**/*.ts",
