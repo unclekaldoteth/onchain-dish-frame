@@ -109,17 +109,15 @@ export default function MintSuccessPage() {
   const rarityClasses = getRarityClasses(dish.rarity);
 
     const shareOnFarcaster = () => {
-  // Pastikan window ada (client only)
   if (typeof window === "undefined") return;
 
   const origin = window.location.origin; // contoh: http://localhost:3000 atau https://onchaindish.app
-  const appUrl = origin; // nanti di prod = https://onchaindish.app
+  const appUrl = origin; // nanti otomatis ikut domain production
 
   const text = `I just minted the ${dish.title} recipe NFT into my onchain kitchen 🍛
 
 Mint your own Indonesian dish and start your onchain kitchen: ${appUrl}`;
 
-  // OG image NFT-ish kita
   const imageUrl = `${origin}/api/og/${dish.id}`;
 
   const url =
@@ -130,6 +128,7 @@ Mint your own Indonesian dish and start your onchain kitchen: ${appUrl}`;
 
   window.open(url, "_blank");
 };
+
 
 
   return (
