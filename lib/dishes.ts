@@ -7,6 +7,9 @@ export type Dish = {
   tagline: string;
   rarity: string;
   image: string;
+  description?: string[];
+  ingredients?: string[];
+  steps?: string[];
 };
 
 export const DISHES: Dish[] = [

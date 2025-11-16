@@ -1,7 +1,5 @@
-import { NextConfig } from 'next'
+import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  turbopack: true // cukup boolean true, gak perlu object
-}
+const nextConfig: NextConfig = {};
 
-export default nextConfig
+export default nextConfig;

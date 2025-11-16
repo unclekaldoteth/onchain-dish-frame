@@ -124,7 +124,7 @@ export async function GET(
                 maxWidth: 420,
               }}
             >
-              {dishData.description}
+              {dishData.tagline}
             </div>
 
             <div
